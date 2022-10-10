@@ -1,0 +1,93 @@
+body {
+  background: #f9f7fe;
+}
+
+.wrap {
+  max-width: 775px;
+  font-family: "Inter Tight", sans-serif;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color: #878787;
+  padding: 40px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #272142;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+h1,
+ul {
+  text-align: left;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  color: #27214266;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+img {
+  margin: auto 0;
+  width: 52px;
+  height: 52px;
+}
+
+.values {
+  color: #f65282;
+  font-weight: 400;
+}
+
+.temperature-container {
+  text-align: right;
+}
+
+.current-temperature {
+  color: #212121;
+  font-size: 80px;
+  font-weight: 400;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.units {
+  position: relative;
+  top: 20px;
+  margin-left: 5px;
+}
+
+.units,
+.units a {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.units a:hover {
+  cursor: pointer;
+  color: #885df1;
+}
+
+small {
+  color: #26204066;
+}
+
+small a {
+  color: #885df1;
+}
+#fahrenheit {
+  opacity: 0.4;
+}

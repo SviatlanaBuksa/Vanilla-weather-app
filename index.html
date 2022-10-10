@@ -12,6 +12,16 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -22,23 +32,29 @@
             <h1>New York</h1>
             <ul>
               <li>Monday 20:28, clear sky</li>
-              <li>Humidity: 38%, Wind: 8.05km/h</li>
+              <li>
+                Humidity: <span class="values">38%</span>, Wind:
+                <span class="values">8.05km/h</span>
+              </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col temperature-container d-flex justify-content-end">
             <img src="images/icon-sun.png" alt="icon" />
-            <span>20</span><a href="">°C</a>|<a href="">°F</a>
+            <span class="current-temperature align-middle">20</span
+            ><span class="units"
+              ><a href="">°C</a> | <a href="#" id="fahrenheit">°F</a></span
+            >
           </div>
         </div>
         <hr />
-        <small
+        <small class="align-middle"
           >This project was coded by Sviatlana Buksa and is
           <a href="https://github.com/SviatlanaBuksa/Vanilla-weather-app"
             >open-sourced on GitHub</a
           >
-          and hosted on
+          and
           <a href="https://kaleidoscopic-gaufre-5a8b1e.netlify.app/"
-            >Netlify</a
+            >hosted on Netlify</a
           ></small
         >
       </div>
