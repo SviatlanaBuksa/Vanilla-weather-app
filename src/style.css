@@ -54,7 +54,7 @@ img {
   text-align: right;
 }
 
-.current-temperature {
+#current-temperature {
   color: #212121;
   font-size: 80px;
   font-weight: 400;
@@ -90,4 +90,8 @@ small a {
 }
 #fahrenheit {
   opacity: 0.4;
+}
+
+#description::first-letter {
+  text-transform: capitalize;
 }

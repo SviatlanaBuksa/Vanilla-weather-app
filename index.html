@@ -23,25 +23,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="wrap">
         <div class="row">
           <div class="col">
-            <h1>New York</h1>
+            <h1 id="city">New York</h1>
             <ul>
-              <li>Clear sky</li>
+              <li id="description">Clear sky</li>
               <li>
-                Humidity: <span class="values">38%</span>, Wind:
-                <span class="values">8.05km/h</span>
+                Humidity:
+                <span class="values"><span id="humidity">38</span>%</span>,
+                Wind:
+                <span class="values"><span id="wind">8.05</span> km/h</span>
               </li>
-              <li>Last update: Monday, 20:28</li>
+              <li>Last update: <span id="date">Monday, 20:28</span></li>
             </ul>
           </div>
           <div class="col temperature-container d-flex justify-content-end">
             <img src="images/icon-sun.png" alt="icon" />
-            <span class="current-temperature align-middle">20</span
+            <span id="current-temperature">20</span
             ><span class="units"
               ><a href="#">°C</a> | <a href="#" id="fahrenheit">°F</a></span
             >
