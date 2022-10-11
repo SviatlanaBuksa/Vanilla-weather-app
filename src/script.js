@@ -31,14 +31,24 @@ function displayWeather(response) {
   let wind = document.querySelector("#wind");
   let date = response.data.dt;
   let dateElement = document.querySelector("#date");
+  let icon = response.data.weather[0].icon;
+  let iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+  let iconElement = document.querySelector("#icon");
 
   temperature.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", `${response.data.weather[0].description}`);
 
   dateElement.innerHTML = formatedDate(date);
+
+  console.log(icon);
 }
 
 function search(city) {
@@ -49,4 +59,4 @@ function search(city) {
   axios.get(apiUrl).then(displayWeather);
 }
 
-search("New York");
+search("London");
