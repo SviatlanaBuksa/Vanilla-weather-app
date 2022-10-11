@@ -23,7 +23,6 @@ function formatedDate(date) {
 }
 
 function displayWeather(response) {
-  console.log(response);
   let temperature = document.querySelector("#current-temperature");
   let city = document.querySelector("#city");
   let description = document.querySelector("#description");
@@ -47,8 +46,6 @@ function displayWeather(response) {
   iconElement.setAttribute("alt", `${response.data.weather[0].description}`);
 
   dateElement.innerHTML = formatedDate(date);
-
-  console.log(icon);
 }
 
 function search(city) {
@@ -59,4 +56,13 @@ function search(city) {
   axios.get(apiUrl).then(displayWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-input").value;
+  search(city);
+}
+
 search("London");
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
