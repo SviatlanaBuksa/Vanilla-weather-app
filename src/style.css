@@ -75,9 +75,16 @@ img {
   text-decoration: none;
 }
 
-.units a:hover {
-  cursor: pointer;
-  color: #885df1;
+.units a {
+  opacity: 0.4;
+}
+
+.units .active {
+  opacity: 1;
+}
+
+.units .active:hover {
+  cursor: default;
 }
 
 small {
@@ -102,10 +109,6 @@ small a:hover {
   font-weight: 700;
   height: 50px;
   padding: 15px 0;
-}
-
-#fahrenheit {
-  opacity: 0.4;
 }
 
 #description::first-letter {
