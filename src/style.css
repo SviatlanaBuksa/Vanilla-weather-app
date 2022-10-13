@@ -39,9 +39,9 @@ li {
   line-height: 20px;
 }
 
-img {
+img#icon {
   margin: auto 0;
-  width: 25%;
+  width: 35%;
 }
 
 .values {
@@ -114,6 +114,7 @@ small a:hover {
 #description::first-letter {
   text-transform: capitalize;
 }
+
 #search-input {
   background: #f9f7fe;
   border: none;
@@ -129,4 +130,23 @@ small a:hover {
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
   color: #212529;
   outline: 0;
+}
+
+.weather-forecast-day {
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.weather-forecast img {
+  width: 65%;
+}
+
+.weather-forecast-temperature {
+  color: #f65282;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  margin-left: 10px;
 }
